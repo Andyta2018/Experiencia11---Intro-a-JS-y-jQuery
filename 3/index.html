@@ -14,6 +14,20 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <style media="screen">
+      #row-3{
+        transition: 1s;
+      }
+
+      table tr:last-child {
+      background-color: red;
+    }
+    </style>
   </head>
   <body>
     <h1> Hey !! </h1>
@@ -62,5 +76,18 @@
 
       </fieldset>
     </form>
+       
+    <script>
+      $("h1").css("color", "red");
+      $(".section-1").css("background-color", "yellow");
+      $(".counter").text(parseInt(101) + 10);
+      $("#row-3").on("click", function(){
+        $("#row-3").css("background-color", "gray")
+      })
+      $(".section-1 h1").css("font-size", "2rem")
+      $(".row: last-of-type").css("background-color", "red");
+
+    </script>
   </body>
+
 </html>
